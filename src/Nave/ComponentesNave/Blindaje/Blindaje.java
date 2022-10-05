@@ -1,5 +1,4 @@
 package Nave.ComponentesNave.Blindaje;
-
 import Nave.ComponentesNave.ComponenteNave;
 
 public abstract class Blindaje implements ComponenteNave {
@@ -8,8 +7,9 @@ public abstract class Blindaje implements ComponenteNave {
   public abstract String nombre();
 
   @Override
-  public abstract String descripcion();
+  public abstract String description();
 
   @Override
   public abstract double precio();
+
 }

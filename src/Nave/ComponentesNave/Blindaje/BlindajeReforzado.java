@@ -3,11 +3,11 @@ package Nave.ComponentesNave.Blindaje;
 public class BlindajeReforzado extends Blindaje {
     @Override
     public String nombre() {
-        return "Blindaje reforzado.";
+        return "Blindaje Reforzado.";
     }
 
     @Override
-    public String descripcion() {
+    public String description() {
         return "Resiste ataques de láser simple y 1 misil de plasma.";
     }
 

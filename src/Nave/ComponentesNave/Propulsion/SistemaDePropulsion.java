@@ -1,5 +1,4 @@
 package Nave.ComponentesNave.Propulsion;
-
 import Nave.ComponentesNave.ComponenteNave;
 
 public abstract class SistemaDePropulsion implements ComponenteNave {
@@ -8,7 +7,7 @@ public abstract class SistemaDePropulsion implements ComponenteNave {
   public abstract String nombre();
 
   @Override
-  public abstract String descripcion();
+  public abstract String description();
 
   @Override
   public abstract double precio();

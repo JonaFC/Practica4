@@ -7,7 +7,7 @@ public class CabinaPiloto extends Cabina {
     }
 
     @Override
-    public String descripcion() {
+    public String description() {
         return "Solo cabe una persona.";
     }
 
@@ -15,4 +15,5 @@ public class CabinaPiloto extends Cabina {
     public double precio() {
         return 5000.;
     }
+
 }

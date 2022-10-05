@@ -1,13 +1,14 @@
 package Nave.ComponentesNave.Cabina;
 
 public class CabinaEjercito extends Cabina {
+
     @Override
     public String nombre() {
-        return "Ejercito.";
+        return "Ejército.";
     }
 
     @Override
-    public String descripcion() {
+    public String description() {
         return "Caben hasta 50.";
     }
 

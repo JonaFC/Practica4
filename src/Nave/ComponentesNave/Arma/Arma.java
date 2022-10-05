@@ -1,5 +1,4 @@
 package Nave.ComponentesNave.Arma;
-
 import Nave.ComponentesNave.ComponenteNave;
 
 public abstract class Arma implements ComponenteNave {
@@ -8,7 +7,7 @@ public abstract class Arma implements ComponenteNave {
   public abstract String nombre();
 
   @Override
-  public abstract String descripcion();
+  public abstract String description();
 
   @Override
   public abstract double precio();

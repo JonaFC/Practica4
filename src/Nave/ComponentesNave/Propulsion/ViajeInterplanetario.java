@@ -1,13 +1,14 @@
 package Nave.ComponentesNave.Propulsion;
 
 public class ViajeInterplanetario extends SistemaDePropulsion {
+
     @Override
     public String nombre() {
-        return "Viaje intercontinental.";
+        return "Viaje Interplanetario.";
     }
 
     @Override
-    public String descripcion() {
+    public String description() {
         return "Te permite hacer viajes de hasta medio año luz de distancia.";
     }
 
@@ -15,4 +16,5 @@ public class ViajeInterplanetario extends SistemaDePropulsion {
     public double precio() {
         return 50000.;
     }
+
 }

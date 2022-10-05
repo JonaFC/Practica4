@@ -9,37 +9,30 @@ import Nave.ComponentesNave.Propulsion.*;
 public class PrebuiltShip {
     private Builder builder = new NaveBuilder();
 
-    public Nave construct(int selection) throws Exception {
-        if (selection > 3 || selection < 1) {
-            throw new Exception();
-        }
-
+    public Nave construct(int selection){
         switch (selection) {
-
-            case 1:
+            case 1 -> {
                 // Nave individual de combate.
                 builder.addComponent(new ViajeIntergalactico());
                 builder.addComponent(new BlindajeFortaleza());
                 builder.addComponent(new CabinaPiloto());
                 builder.addComponent(new LaserDestructor());
-                break;
-            case 2:
+            }
+            case 2 -> {
                 // Nave militar de transporte.
                 builder.addComponent(new CabinaEjercito());
                 builder.addComponent(new LaserDestructor());
                 builder.addComponent(new BlindajeFortaleza());
                 builder.addComponent(new ViajeIntercontinental());
-                break;
-            case 3:
+            }
+            case 3 -> {
                 // Base espacial de guerra.
                 builder.addComponent(new ViajeIntergalactico());
                 builder.addComponent(new MisilesDePlasma());
                 builder.addComponent(new BlindajeReforzado());
                 builder.addComponent(new CabinaTripulacion());
-                break;
-            default:
-                System.err.print("Selecciona una opción válida.");
-                break;
+            }
+            default -> System.err.print("Selecciona una opción válida.");
         }
 
         return builder.build();

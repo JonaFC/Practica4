@@ -1,10 +1,9 @@
 package Nave;
 
-import java.util.LinkedList;
-
 import Builder.Builder;
 import Nave.ComponentesNave.ComponenteNave;
 
+import java.util.LinkedList;
 public class Nave {
     private LinkedList<ComponenteNave> componentes;
 
@@ -13,23 +12,25 @@ public class Nave {
     }
 
     public double costoNave() {
-        double costo = 0.;
 
+        double costo = 0.;
         for (ComponenteNave componente : componentes) {
             costo += componente.precio();
         }
         return costo;
     }
 
-    public void mostrarNave() {
+    public String mostrarNave() {
 
+        StringBuilder mostraNaveString = new StringBuilder("\n");
         for (ComponenteNave componente : componentes) {
-            System.out.print("Componente : " + componente.nombre());
-            System.out.println("... Precio: €" + componente.precio());
+            mostraNaveString.append("Componente: ").append(componente.nombre()).append(" - Descripción: ").append(componente.description()).append(" - Costo: €").append(componente.precio()).append("\n");
         }
+        return mostraNaveString.toString();
     }
 
     public LinkedList<ComponenteNave> getComponentes() {
         return componentes;
     }
+
 }

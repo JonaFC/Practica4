@@ -3,11 +3,11 @@ package Nave.ComponentesNave.Propulsion;
 public class ViajeIntercontinental extends SistemaDePropulsion {
     @Override
     public String nombre() {
-        return "Viaje intercontinental.";
+        return "Viaje Intercontinental.";
     }
 
     @Override
-    public String descripcion() {
+    public String description() {
         return "Te permite hacer viajes no tan largos.";
     }
 
@@ -15,4 +15,5 @@ public class ViajeIntercontinental extends SistemaDePropulsion {
     public double precio() {
         return 20000.;
     }
+
 }

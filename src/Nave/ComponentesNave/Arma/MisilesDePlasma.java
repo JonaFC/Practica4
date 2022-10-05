@@ -3,11 +3,11 @@ package Nave.ComponentesNave.Arma;
 public class MisilesDePlasma extends Arma {
     @Override
     public String nombre() {
-        return "Misiles de plasma.";
+        return "Misiles de Plasma.";
     }
 
     @Override
-    public String descripcion() {
+    public String description() {
         return "Puede dañar una nave con blindaje reforzado ";
     }
 
@@ -15,4 +15,5 @@ public class MisilesDePlasma extends Arma {
     public double precio() {
         return 300000.;
     }
+
 }

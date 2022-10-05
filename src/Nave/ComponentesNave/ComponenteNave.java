@@ -2,9 +2,9 @@ package Nave.ComponentesNave;
 
 public interface ComponenteNave {
 
-    public String nombre();
+    String nombre();
 
-    public String descripcion();
+    String description();
 
-    public double precio();
+    double precio();
 }

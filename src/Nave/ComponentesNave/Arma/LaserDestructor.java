@@ -3,11 +3,11 @@ package Nave.ComponentesNave.Arma;
 public class LaserDestructor extends Arma {
     @Override
     public String nombre() {
-        return "Láser destructor de planetas.";
+        return "Láser Destructor de Planetas.";
     }
 
     @Override
-    public String descripcion() {
+    public String description() {
         return "Puede acabar con un planeta.";
     }
 
