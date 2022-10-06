@@ -30,4 +30,44 @@ public class LaserSimple extends Arma {
     public double precio() {
         return 25000.;
     }
+
+    /**
+     * Regresa el ataque del componente.
+     * 
+     * @return int Ataque del componente.
+     */
+    @Override
+    public int atack() {
+        return 1;
+    }
+
+    /**
+     * Regresa el Defensa del componente.
+     * 
+     * @return int defensa del componente.
+     */
+    @Override
+    public int defence() {
+        return 809;
+    }
+
+    /**
+     * Regresa la velocidad del componente.
+     * 
+     * @return int Velocidad del componente.
+     */
+    @Override
+    public int speed() {
+        return 22;
+    }
+
+    /**
+     * Regresa el peso del componente.
+     * 
+     * @return int Peso del componente.
+     */
+    @Override
+    public int weight() {
+        return 33;
+    }
 }

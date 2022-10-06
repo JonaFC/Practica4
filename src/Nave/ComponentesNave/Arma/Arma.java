@@ -29,4 +29,32 @@ public abstract class Arma implements ComponenteNave {
    */
   @Override
   public abstract double precio();
+
+  /**
+   * Regresa el ataque del componente.
+   * 
+   * @return int Ataque del componente.
+   */
+  public abstract int atack();
+
+  /**
+   * Regresa el defence del componente.
+   * 
+   * @return int Defence del componente.
+   */
+  public abstract int defence();
+
+  /**
+   * Regresa el speed del componente.
+   * 
+   * @return int Speed del componente.
+   */
+  public abstract int speed();
+
+  /**
+   * Regresa el weight del componente.
+   * 
+   * @return int Weight del componente.
+   */
+  public abstract int weight();
 }

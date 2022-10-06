@@ -30,4 +30,44 @@ public class BlindajeReforzado extends Blindaje {
     public double precio() {
         return 15000.;
     }
+
+    /**
+     * Regresa el ataque del componente.
+     * 
+     * @return int Ataque del componente.
+     */
+    @Override
+    public int atack() {
+        return 7;
+    }
+
+    /**
+     * Regresa el Defensa del componente.
+     * 
+     * @return int defensa del componente.
+     */
+    @Override
+    public int defence() {
+        return 90;
+    }
+
+    /**
+     * Regresa la velocidad del componente.
+     * 
+     * @return int Velocidad del componente.
+     */
+    @Override
+    public int speed() {
+        return 456;
+    }
+
+    /**
+     * Regresa el peso del componente.
+     * 
+     * @return int Peso del componente.
+     */
+    @Override
+    public int weight() {
+        return 23;
+    }
 }

@@ -1,7 +1,6 @@
 package Nave.ComponentesNave;
 
 public interface ComponenteNave {
-
     /**
      * Regresa el nombre del componente.
      * 
@@ -22,4 +21,32 @@ public interface ComponenteNave {
      * @return double Precio del componente.
      */
     double precio();
+
+    /**
+     * Regresa el ataque del componente.
+     * 
+     * @return int Ataque del componente.
+     */
+    int atack();
+
+    /**
+     * Regresa el defence del componente.
+     * 
+     * @return int Defence del componente.
+     */
+    int defence();
+
+    /**
+     * Regresa el speed del componente.
+     * 
+     * @return int Speed del componente.
+     */
+    int speed();
+
+    /**
+     * Regresa el weight del componente.
+     * 
+     * @return int Weight del componente.
+     */
+    int weight();
 }
